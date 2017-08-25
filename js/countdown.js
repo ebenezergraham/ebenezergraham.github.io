@@ -1,6 +1,6 @@
 // Copyright (c) 2017 Pactmart Codes. All rights reserved.
 window.onload = function(){
-var duration = 300;
+var duration = 300000;
 var timeUp = false;
 var display = document.getElementById('clock-countdown');
 startTimer(duration, display,timeUp);
@@ -9,9 +9,9 @@ startTimer(duration, display,timeUp);
 function startTimer(duration, display, timeUp) {
     var counter = duration,days, hours, min, sec;
     setInterval(function () {
-	days = parseInt(counter / 60, 10);
-	hours = parseInt(counter / 60, 10);
-        min = parseInt(counter / 60, 10);
+	days = parseInt(counter / 86400, 10);
+	hours = parseInt(counter % 86400, 10);
+        min = parseInt(counter % 3600, 10);
         sec = parseInt(counter % 60, 10);
 	days = days < 10 ? '0' + days : days;    
 	hours = hours < 10 ? '0' + hours : hours;
