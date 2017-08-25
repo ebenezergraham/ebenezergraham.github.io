@@ -17,17 +17,17 @@ function startTimer(duration, display, timeUp) {
 	hours = hours < 10 ? '0' + hours : hours;
         min = min < 10 ? '0' + min : min;
 	sec = sec < 10 ? '0' + sec : sec;
-        if (min === 0 && sec == 00) {
+        if (days == 00 && hours == 00 && min == 00 && sec == 00) {
             timeUp = true;
             if (timeUp) {
-		display.innerHTML="Time is up";
+		lunchUpdate();
             }
             	display.innerHTML = days + ":" + hours + min + ":" + sec;
 
         }
         if (!timeUp) {
-            display.innerHTML = days + ":" + hours + min + ":" + sec;
-            document.getElementById('timer').value = counter;
+            display.innerHTML = days + " : " + hours+ " : " + min + " : " + sec;
+            document.getElementById('clock-countdown').value = counter;
         }
 		
         if (--counter < 0) {
