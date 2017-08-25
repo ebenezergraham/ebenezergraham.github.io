@@ -10,8 +10,8 @@ function startTimer(duration, display, timeUp) {
     var counter = duration,days, hours, min, sec;
     setInterval(function () {
 	 days = parseInt(0, 10);
-	    hours = parseInt(counter % 3600, 10);
-	    min = parseInt(hours*60 % 60, 10);
+	    hours = parseInt(counter / 3600, 10);
+	    min = parseInt((hours*60) / 60, 10);
 	sec = parseInt(counter % 60, 10);
 	
 	
