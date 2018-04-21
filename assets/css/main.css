@@ -1,0 +1,502 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/fonts/Poppins');
+  src: local('Poppins'), url('Poppins-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, em, img, ins, kbd, q, s, small, strong, b, u, i, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, header, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+body {
+  line-height: 1;
+  background: linear-gradient(135deg, #b5ce70 35%, #345132 65%);
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 1em 0;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0.3em;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0.3em;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0.1em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0.1em;
+  line-height: 1.5;
+}
+
+#menu {
+  float: right;
+  padding: 15px 15px;
+  position: relative;
+}
+
+.side-menu {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 215px;
+  height: 100%;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.sub-heading {
+  text-align: center;
+  color: white;
+    margin: 5%;
+}
+.locationhead, .p-plan {
+    margin-bottom: 1%;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 10%;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#menu-toggle {
+  position: fixed;
+  left: 20px;
+  top: 28px;
+  color: white;
+  z-index: 1000;
+}
+
+#side-menu-close {
+  float: right;
+  position: relative;
+  color: white;
+  right: 10px;
+  top: 18px;
+}
+
+.card {
+  height: auto;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  margin: 2%;
+  background: white;
+  padding: 2em;
+}
+@media (max-width: 650px) {
+  .background-right,.background-left {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media(max-width: 650px) {
+  .roles-card{
+    height: auto;
+  }
+}
+@media(max-width: 650px) {
+  #menu{
+    display: none;
+  }
+}
+@media(max-width: 650px) {
+  .links li {
+    margin: 0.5;
+  }
+}
+
+.theowl {
+  padding: 10% 0%;
+}
+
+#fb-root {
+  padding: 2% 12%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.company-images {
+  width: 90%;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+#application-div {
+  padding: 0 15%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.p-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.appcard {
+  height: auto;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+  background: white;
+  padding: 30px;
+}
+
+.background-left {
+  left: 0;
+}
+
+.background-right {
+  right: 0;
+  float: left;
+}
+
+#background, .roles, .Services {
+  margin: 0 10%;
+}
+
+.roles-card {
+
+}
+
+#side-menu-links {
+  margin-top: 50px;
+}
+
+#side-menu-links li {
+  display: block;
+  margin: 1.5em 1.5em;
+}
+
+.links li {
+  display: inline;
+  margin: 0.8em 0.8em;
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  display: inline;
+  color: #fff;
+  font-weight: 500;
+}
+
+.links li a:hover {
+  text-decoration-style: dashed;
+}
+
+.banner-full {
+  background-image: url(../images/bush.jpeg);
+  background-size: cover;
+}
+
+#particles-js {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#typed-wrapper {
+  position: relative;
+  text-align: center;
+  bottom: 10.5em;
+  font-size: 2.5em;
+  color: #fff;
+  box-sizing: inherit;
+  width: 100%;
+}
+@media(max-width: 650px) {
+  #typed-wrapper{
+    bottom: 5em;
+    font-size: 1em;
+  }
+}
+
+#calltoaction {
+  position: relative;
+  height: 40px;
+  width: auto;
+  bottom: 30em;
+  left: 45em;
+  color: white;
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 3px solid #fff;
+}
+
+#calltoaction:hover {
+  color: #0a833d;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#map {
+  height: 400px;
+  clear: both;
+}
+
+#typed {
+  text-align: center;
+  width: inherit;
+}
+
+.parallax {
+  background-image: url(../images/banner2.jpeg);
+  height: 250px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-line {
+  width: 200px;
+  height: 0;
+  margin-top: 50px;
+}
+
+#second-parallax {
+  background-image: url(../images/banner1.jpeg);
+}
+
+#footer {
+  padding: 4em 0 2em 0;
+  background: #1d1d1d;
+  text-align: center;
+  height: 30%;
+}
+
+#footer ul.icons li {
+  display: inline-block;
+  padding: 0 1rem 0 0;
+}
+
+.label {
+  margin: 10px;
+  font-size: 0.7em;
+}
+
+.label a {
+  text-decoration: none;
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#footer a:hover {
+  color: #FFF;
+}
+
+#footer .copyright {
+  color: #bbb;
+  font-size: 0.9em;
+  margin: 20px;
+  padding: 0;
+  text-align: center;
+}
+
+/* Slideshow container */
+
+#diary-quote {
+  background-image: url(../images/sliderbg.jpg);
+}
+
+.slideshow-container {
+  position: relative;
+  background-image: url(../images/sliderbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Slides */
+
+.mySlides, .outSlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+
+.dot, .outdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+
+.author {
+  color: cornflowerblue;
+}
+
+.column {
+  float: left;
+  width: 23.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+#plan-div{
+  margin: 5% 0;
+}
+/* Display the columns below each other instead of side by side on small screens */
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+
+.serivce-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+
+.container {
+  padding: 16px 16px;
+  background-color: white;
+  text-align: center;
+}
+
+.icons-container {
+  padding: 16px 16px;
+  text-align: center;
+}
+
+/* Clear floats */
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  margin: 5% 0;
+}
