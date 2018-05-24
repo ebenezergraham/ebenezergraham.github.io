@@ -1,3 +1,3 @@
 Get the slides at
 
-[git.glfmn.io/github-workshop](https://git.glfmn.io/github-workshop)
+[ebenezergraham.github.io/docs/git-and-github-masterclass](ebenezergraham.github.io/docs/git-and-github-masterclass)
