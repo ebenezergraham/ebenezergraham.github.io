@@ -1,32 +1,27 @@
 Code commented out with no explanation
 
-```c++
-for(int i = 1;i < Ntr;i++){
-    if(radius > turn_rad[i-1] &amp;&amp; radius <= turn_rad[i] ){
-        int j=1;
-        /*
-        for(int j = 1; j < Nh; j++) {
-                if (theta &gt; heading[j-1]) {
-                // cout << "I" << i << endl;
-                // cout << "J" << j << endl;
+```java
 
-                q11 = torque_in[i-1][j-1];
-                q12 = torque_in[i][j-1];
-                q21 = torque_in[i-1][j];
-                q22 = torque_in[i][j];
+public void customerCreatedEvent(@Header(TenantHeaderFilter.TENANT_HEADER) final String tenant,
+                                 final String payload) {
 
-                // torque_out = sqrt(q22 - q12) * q22/q11;
-                torque_out = abs(sqrt(q22 - q12) * q22/q11);
+/*
+    //Alternative
+    Customer customer = customerManager.findCustomer(payload);
+    System.out.println(customer.getContactDetails());
 
-                cout << "T_Out:" << t_out << endl;
+*/
+    Customer customer = customerManager.findCustomer(payload);
+    if (customer.getContactDetails().size() > 0) {
+        customer.getContactDetails().forEach(contactDetail -> {
+            if (contactDetail.getType().equals(ContactDetail.Type.PHONE)) {
+                Strebenezering receiverNumber = customer.getContactDetails().get(0).getValue();
+                smsSender.sendSMS(receiverNumber, "Dear Valued Customer, Your account has been created");
+            } else if (contactDetail.getType().equals(ContactDetail.Type.EMAIL)) {
+                String emailAddress = customer.getContactDetails().get(0).getValue();
+                emailSender.sendEmail(emailAddress, "Account created", "Dear Valued Customer, Your account has been created");
             }
-        }
-        // Power = data[ i-1+Ntr ] + (radius-data[i-1]);
-        */
-        // Inner torque calculations
-        q11 = torque_in[i-1][0];
-        q22 = torque_in[i][0];
-        torque_out = q22/q11;
+        });
     }
 }
 ```
