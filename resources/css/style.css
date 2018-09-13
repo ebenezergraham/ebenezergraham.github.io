@@ -202,7 +202,7 @@ p {
 .hero-text {
   position: absolute;
   width: 1140px;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -254,9 +254,10 @@ p {
       rgba(100, 10, 39, 0.8),
       rgba(15, 15, 39, 0.9)
     ),
-    url("img/footerbg.jpeg");
+    url("img/back-drop-2.jpg");
   background-attachment: fixed;
-  height: 400px;
+  background-size: cover;
+  height: 450px;
 }
 
 .select-country {
@@ -769,5 +770,10 @@ table.university-list {
   .follow-button,
   .twitter-mention-button {
     width: 100%;
+  }
+
+  #twitter-container {
+    padding: 0;
+    top: 0;
   }
 }
