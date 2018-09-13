@@ -95,19 +95,19 @@ $(function() {
 
 $("#back-drop").ripples({
   // Image Url
-  imageUrl: null,
+  imageUrl: "img/back-drop-2.jpg",
   // The width and height of the WebGL texture to render to.
   // The larger this value, the smoother the rendering and the slower the ripples will propagate.
-  resolution: 256,
+  resolution: 400,
   // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
-  dropRadius: 10,
+  dropRadius: 15,
   // Basically the amount of refraction caused by a ripple.
   // 0 means there is no refraction.
   perturbance: 0,
   // Whether mouse clicks and mouse movement triggers the effect.
   interactive: true,
   // The crossOrigin attribute to use for the affected image.
-  crossOrigin: ""
+  crossOrigin: "true"
 });
 
 //hide and how social media bar
@@ -135,24 +135,6 @@ function statisticsFactory(country, programme) {
     "?date=2009:2015&format=json"
   );
 }
-
-/*Starter functions
-* Functions which need to run as soon as the document is ready
-* */
-$("#data").ready(function() {
-  if (window.location.pathname == "/universtas/list-of-universities.html") {
-    var country = sessionStorage.getItem("country");
-    displayUniversities(country);
-  }
-});
-
-$("#statistics-data").ready(function() {
-  if (window.location.pathname == "/universtas/statictics.html") {
-    var country = sessionStorage.getItem("countrycode");
-    var programme = sessionStorage.getItem("programme");
-    displayStatistics(country, programme);
-  }
-});
 
 function countryStatistics(country) {
   var programme = sessionStorage.getItem("programme");
@@ -308,17 +290,6 @@ function previousStatistics() {
       }
       break;
     }
-  }
-}
-
-//Used in mobile view to display a list of programs
-function listAll() {
-  var element = $("#showlist");
-
-  if (element[0].className == "no-display") {
-    element[0].className = " ";
-  } else {
-    element[0].className = "no-display";
   }
 }
 
