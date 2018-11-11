@@ -2,25 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>Graham's ... </title>
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="vendor/css/normalize.css">
-    <link rel="stylesheet" href="vendor/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="resources/css/style.css">
+	<link rel="stylesheet" href="vendor/css/normalize.css">
+	<link rel="stylesheet" href="vendor/css/grid.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	      crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <header>
-        <div class="social-media" id="top">
-            <i class="fa fa-bars icon" onclick="toggle()"><span>Menu</span></i>
-            <p id="top-msg">+230 58409206 | egraha203@caledonian.ac.uk
-                <span>
+<header>
+	<div class="social-media" id="top">
+		<i class="fa fa-bars icon" onclick="toggle()"><span>Menu</span></i>
+		<p id="top-msg">+230 58409206 | egraha203@caledonian.ac.uk
+			<span>
                     Follow
                     <a href="https://www.facebook.com/ebenezerkagraham"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.twitter.com/ebenezergraham"><i class="fab fa-twitter-square"></i></a>
@@ -28,214 +29,274 @@
                     <a href="https://www.linkedin.com/ebenezergraham"><i class="fab fa-linkedin"></i></a>
 
                 </span>
-            </p>
-        </div>
+		</p>
+	</div>
 
-        <nav class="navbar">
-            <i class="fa fa-university"><span>Portfolio</span> </i>
-            <a href="#" class="active">You are here!</a>
-            <a href="#section-countries">Portfolio</a>
-            <a href="#section-testimonials">Favourite Quotes</a>
-        </nav>
-
-
-        <div class="hero-text">
-            <h1>Hi there, Please don't do<br> anything I wouldn't do!</h1>
-            <p>
-                And so before you head off and do your thing, know that this site was coded
-                from scratch. I always feel its not ready and this is because
-                I'm always experimenting with it and so know that a few things might be broken :)
-            </p>
-            <a class="btn btn-full" href="#section-countries">View Portfolio</a>
-            <a class="btn btn-empty" href="#section-introduction">Get to know me</a>
-        </div>
-    </header>
-    <section id="section-introduction">
-        <div class="row">
-            <h2 class="heading">Introduction</h2>
-        </div>
-
-        <div class="row">
-            <div class="col span-1-of-2 box ">
-                <p>
-                    <strong>WHO AM I?</strong><br>
-                    I am a young professional actively improving my skillset through
-                    opensource contributions and independent contracts. I creatively leverage web technologies
-                    to solve problems that cross my path.
-
-                    <br><br><strong>WHY YOU SHOULD CONSIDER ME?</strong><br>
-                    I am ready to learn and I am corperative. I am passionate
-                    about web design, and with an excellent skillset that allows me to
-                    be versitile during development. I have participated in a variety of
-                    projects and competitions that has allowed me to acquire the right
-                    exposure to best practices.
-                </p>
-                <br>
-                <a class="btn btn-full" href="#section-countries">Learn More</a>
-            </div>
-
-            <div class="col span-1-of-2 box">
-                <div id="twitter-container"><a href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                        data-lang="en" data-show-count="false">Follow @ebenezergraham</a>
-                    <a href="https://twitter.com/intent/tweet?screen_name=ebenezergraham&ref_src=twsrc%5Etfw" class="twitter-mention-button"
-                        data-lang="en" data-show-count="false">Tweet to @ebenezergraham</a>
-                    <a class="twitter-timeline" data-lang="en" data-width="335" data-height="450" href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw">
-                        Check out my Tweets
-                    </a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="section-countries">
-        <div id="back-drop">
-            <div class="row">
-                <h2 class="heading">Portfolio</h2>
-            </div>
-
-            <div class="row">
-
-                <div class="col span-1-of-3 box card">
-                    <h3>FINCN Notifications</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/fincn.png" alt="Apace Image"></figure>
-                    <p>
-                        This is an sms and email notification microservice developed for the Apache Fineract CN
-                        project.
-                    </p>
-                    <a class="btn btn-full" href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=75975771">Documentation</a>
-                    <a class="btn btn-empty" href="https://github.com/ebenezergraham/notifications">GitHub</a>
-                </div>
-
-                <div class="col span-1-of-3 box card">
-                    <h3>University Listings</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/university-listing.jpg" alt="Ghana Image"></figure>
-                    <p>
-                        This project allows your to find all universities available in Ghana, Mauritius, UK and
-                        programmes data.
-                    </p>
-                    <a class="btn btn-full" href="../universtas/">View Demo</a>
-                    <a class="btn btn-empty" href="https://github.com/ebenezergraham/university-statistics">GitHub</a>
-                </div>
-                <div class="col span-1-of-3 box card">
-                    <h3>Quiz Theme</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/alulearn.png" alt="Mauritius Image"></figure>
-                    <p>
-                        This website is a theme for creating a basic quiz website. It's free to use so Enjoy!
-                    </p>
-                    <a class="btn btn-full" href="../quiz-theme-js">View Demo</a>
-                    <a class="btn btn-empty" href="https://github.com/ebenezergraham/quiz-theme-js">GitHub</a>
-                </div>
+	<nav class="navbar">
+		<i class="fa fa-university"><span>Portfolio</span> </i>
+		<a href="#" class="active">Welcome</a>
+		<a href="#section-countries">Portfolio</a>
+		<a href="#section-blog">Blog</a>
+		<a href="#section-testimonials">Favourite Quotes</a>
+	</nav>
 
 
-            </div>
+	<div class="hero-text">
+		<h1>Hi there, welcome to my page.<br> I am Ebenezer Graham </h1>
+		<p>
+			Before you head off and do your thing, know that this site was coded
+			from scratch. I'm always experimenting with it and so know that a few things might be broken :)
+			Do leave a message. See ya!
+		</p>
+		<a class="btn btn-full" href="#section-countries">View Portfolio</a>
+		<a class="btn btn-empty" href="#section-introduction">Get to know me</a>
+	</div>
+</header>
+<section id="section-introduction">
+	<div class="row">
+		<h2 class="heading">Introduction</h2>
+	</div>
 
-            <div class="row">
-                <div class="col span-1-of-3 box card">
-                    <h3>ALU SRC</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/alusrc.png" alt="Mauritius Image"></figure>
-                    <p>
-                        My most recent work
-                    </p>
-                    <a class="btn btn-full" href="https://www.alusrc.com">View Website</a>
-                </div>
-                <div class="col span-1-of-3 box card">
-                    <h3>Freelance Portfolio</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/portfolio.png" alt="Mauritius Image"></figure>
-                    <p>
-                        View a few of my freelance work.
-                    </p>
-                    <a class="btn btn-full" href="./resources/docs/freelance-portfolio.pdf">View Portfolio PDF</a>
-                </div>
-                <div class="col span-1-of-3 box card">
-                    <h3>Pactmart</h3>
-                    <figure class="country-photo"><img src="resources/img/portfolio/pactmart.png" alt="Mauritius Image"></figure>
-                    <p>
-                        My personal freelancing project
-                    </p>
-                    <a class="btn btn-full" href="https://pactmart.com">View the website</a>
-                </div>
-            </div>
-        </div>
-    </section>
+	<div class="row">
+		<div class="col span-1-of-2 box ">
+			<p>
+				<strong>WHO AM I?</strong><br>
+				I am a young professional actively improving my skill set through
+				open-source contributions and independent contracts. I creatively leverage web technologies
+				to solve problems that cross my path.
 
-    <section id="section-testimonials">
-        <div class="row">
-            <h2 class="heading">Favourite Quotes</h2>
-        </div>
-        <p class="row box card">
-            Talk is cheap, show me the code
-            <br>
-            <span class="tname"> Name - Linus Torvalds</span>
-        </p>
-        <p class="row box card">
-            Be so good they can't ignore you.
-            <br>
-            <span class="tname"> Name - Steve Martin</span>
-        </p>
-    </section>
+				<br><br><strong>WHY YOU SHOULD CONSIDER ME?</strong><br>
+				I am ready to learn and I am cooperative. I am passionate
+				about web design, and with an excellent skill set that allows me to
+				be versatile during development. I have participated in a variety of
+				projects and competitions that has allowed me to acquire the right
+				exposure to best practices.
+			</p>
+			<br>
+			<a class="btn btn-full" href="#section-countries">Learn More</a>
+		</div>
 
-    <!-- <section>
+		<div class="col span-1-of-2 box">
+			<div id="twitter-container"><a href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw"
+			                               class="twitter-follow-button"
+			                               data-lang="en" data-show-count="false">Follow @ebenezergraham</a>
+				<a href="https://twitter.com/intent/tweet?screen_name=ebenezergraham&ref_src=twsrc%5Etfw"
+				   class="twitter-mention-button"
+				   data-lang="en" data-show-count="false">Tweet to @ebenezergraham</a>
+				<a class="twitter-timeline" data-lang="en" data-width="335" data-height="450"
+				   href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw">
+					Check out my Tweets
+				</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
+</section>
 
-        <div class="row">
-            <section class="col box span-5-of-7" id="data">
-                <a class="btn btn-full" onclick="chartType('bar')">Bar Chart</a>
-                <a class="btn btn-full" onclick="chartType('line')">Line Chart</a>
-                <a class="btn btn-full" onclick="countryStatistics(GHA)">Ghana</a>
-                <a class="btn btn-full" onclick="countryStatistics(MUS)">Mauritius</a>
-                <a class="btn btn-full" onclick="countryStatistics(GBR)">UK</a>
+<section id="section-countries">
+	<div id="back-drop">
+		<div class="row">
+			<h2 class="heading">Portfolio</h2>
+		</div>
 
-                <div class="charts">
-                    <canvas id="line-chart"></canvas>
-                </div>
+		<div class="row">
 
-                <a class="btn btn-full" id="list-all" onclick="listAll()">List All</a>
+			<div class="col span-1-of-3 box card">
+				<h3>FINCN Notifications</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/fincn.png" alt="Apace Image"></figure>
+				<p>
+					This is an sms and email notification microservice developed for the Apache Fineract CN
+					project.
 
-                <a class="btn btn-full previous" onclick="previousStatistics()">Previous</a>
-                <a class="btn btn-full next" onclick="nextStatistics()">Next</a>
+				</p>
+				<!--<span class="green-circle">
+						<img src="img/correct.png" class="correct">
+						Spring
+					</span>-->
+				<a class="btn btn-full"
+				   href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=75975771">Documentation</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/notifications">GitHub</a>
+			</div>
 
-            </section>
+			<div class="col span-1-of-3 box card">
+				<h3>University Listings</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/university-listing.jpg"
+				                                   alt="Ghana Image"></figure>
+				<p>
+					This project allows your to find all universities available in Ghana, Mauritius, UK and
+					programmes data.
+				</p>
+				<a class="btn btn-full" href="../universtas/">View Demo</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/university-statistics">GitHub</a>
+			</div>
+			<div class="col span-1-of-3 box card">
+				<h3>Quiz Theme</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/alulearn.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					This website is a theme for creating a basic quiz website. It's free to use so Enjoy!
+				</p>
+				<a class="btn btn-full" href="../quiz-theme-js">View Demo</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/quiz-theme-js">GitHub</a>
+			</div>
 
-            <aside class="col box span-2-of-7" id="quick-links">
-                <h2 class="heading">Quick Links</h2>
-                <ul>
-                    <li onclick="changeStatistics(programmes.both_sex)"><a>Number across all Programmes</a></li>
-                </ul>
-            </aside>
-        </div>
-    </section> -->
 
-    <footer class="footer" id="section-footer">
-        <div class="row ">
-            <div class="col span-1-of-2 box">
-                <h2 class="heading">I was here!</h2>
-                <div class="message">
-                    <form class="sucess-none" id="contact-me">
-                        <div class="inputs">
-                            <input type="text" value="" name="name" required id="contact-name" placeholder="Enter Name:">
-                            <input type="email" value="" name="email" required id="contact-email" placeholder="Enter Email:">
-                            <textarea type="text" value="" name="message" required id="contact-message" placeholder="Enter Message:"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-full" value="Submit" name="subscribe" id="submitContact">Send</button>
-                    </form>
-                </div>
-            </div>
+		</div>
 
-            <div class="col span-1-of-2 box">
-                <h2 class="heading">What should I put here</h2>
-                <p>
-                    Figure this out later.
-                </p>
-            </div>
-        </div>
-        <p class="copyright">
-            <span> Live like it's your last</span>
-        </p>
-        <script src="vendor/js/handlebars.min.js"></script>
-        <script src="resources/js/visualization.js"></script>
-        <script src="vendor/js/jquery.ripples.js"></script>
-        <script src="resources/js/script.js"></script>
-    </footer>
+		<div class="row">
+			<div class="col span-1-of-3 box card">
+				<h3>ALU SRC</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/alusrc.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					My most recent work
+				</p>
+				<a class="btn btn-full" href="https://www.alusrc.com">View Website</a>
+			</div>
+			<div class="col span-1-of-3 box card">
+				<h3>Freelance Portfolio</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/portfolio.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					View a few of my freelance work.
+				</p>
+				<a class="btn btn-full" href="./resources/docs/freelance-portfolio.pdf">View Portfolio PDF</a>
+			</div>
+			<div class="col span-1-of-3 box card">
+				<h3>Pactmart</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/pactmart.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					My personal freelancing project
+				</p>
+				<a class="btn btn-full" href="https://pactmart.com">View the website</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="section-blog">
+	<div class="row">
+		<h2 class="heading">My Blog</h2>
+	</div>
+	<div class="row">
+		<div class="col span-1-of-2">
+			<p class=" row box card">
+				Title - Oponsouce and I
+				<!--<i>
+					You’ve probably heard of UNIX — a family of operating systems developed in the 1970s.
+					There is a rich history about this software but in short, a group of really smart people
+					lead by Ken Thompson decided to create this software and make it available for others to use.
+					Out of this free software came a plethora of goodies and a massive family tree.
+				</i>-->
+				<br>
+				<span class="tname">Ebenezer Graham - 11/11/2018</span>
+				<br>
+				<a class="btn btn-full" href="https://medium.com/@ebenezergraham/open-source-and-i-3e3945a9affa">Read
+					More</a>
+
+			</p>
+		</div>
+		<div class="col span-1-of-2">
+			<p class=" row box card">
+				Title - Oponsouce and I
+				<!--<i>
+					You’ve probably heard of UNIX — a family of operating systems developed in the 1970s.
+					There is a rich history about this software but in short, a group of really smart people
+					lead by Ken Thompson decided to create this software and make it available for others to use.
+					Out of this free software came a plethora of goodies and a massive family tree.
+				</i>-->
+				<br>
+				<span class="tname">Ebenezer Graham - 11/11/2018</span>
+				<br>
+				<a class="btn btn-full" href="https://medium.com/@ebenezergraham/open-source-and-i-3e3945a9affa">Read
+					More</a>
+
+			</p>
+		</div>
+	</div>
+</section>
+<section id="section-testimonials">
+	<div class="row">
+		<h2 class="heading">Favourite Quotes</h2>
+	</div>
+	<p class="row box card">
+		Talk is cheap, show me the code
+		<br>
+		<span class="tname"> Name - Linus Torvalds</span>
+	</p>
+	<p class="row box card">
+		Be so good they can't ignore you.
+		<br>
+		<span class="tname"> Name - Steve Martin</span>
+	</p>
+</section>
+
+
+<!-- <section>
+
+	<div class="row">
+		<section class="col box span-5-of-7" id="data">
+			<a class="btn btn-full" onclick="chartType('bar')">Bar Chart</a>
+			<a class="btn btn-full" onclick="chartType('line')">Line Chart</a>
+			<a class="btn btn-full" onclick="countryStatistics(GHA)">Ghana</a>
+			<a class="btn btn-full" onclick="countryStatistics(MUS)">Mauritius</a>
+			<a class="btn btn-full" onclick="countryStatistics(GBR)">UK</a>
+
+			<div class="charts">
+				<canvas id="line-chart"></canvas>
+			</div>
+
+			<a class="btn btn-full" id="list-all" onclick="listAll()">List All</a>
+
+			<a class="btn btn-full previous" onclick="previousStatistics()">Previous</a>
+			<a class="btn btn-full next" onclick="nextStatistics()">Next</a>
+
+		</section>
+
+		<aside class="col box span-2-of-7" id="quick-links">
+			<h2 class="heading">Quick Links</h2>
+			<ul>
+				<li onclick="changeStatistics(programmes.both_sex)"><a>Number across all Programmes</a></li>
+			</ul>
+		</aside>
+	</div>
+</section> -->
+
+<footer class="footer" id="section-footer">
+	<div class="row ">
+		<div class="col span-1-of-2 box">
+			<h2 class="heading">I was here!</h2>
+			<div class="message">
+				<form class="sucess-none" id="contact-me">
+					<div class="inputs">
+						<input type="text" value="" name="name" required id="contact-name" placeholder="Enter Name:">
+						<input type="email" value="" name="email" required id="contact-email"
+						       placeholder="Enter Email:">
+						<textarea type="text" value="" name="message" required id="contact-message"
+						          placeholder="Enter Message:"></textarea>
+					</div>
+					<button type="submit" class="btn btn-full" value="Submit" name="subscribe" id="submitContact">Send
+					</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="col span-1-of-2 box">
+			<h2 class="heading">What should I put here</h2>
+			<p>
+				Figure this out later.
+			</p>
+		</div>
+	</div>
+	<p class="copyright">
+		<span> Live like it's your last</span>
+	</p>
+	<script src="vendor/js/handlebars.min.js"></script>
+	<script src="resources/js/visualization.js"></script>
+	<script src="vendor/js/jquery.ripples.js"></script>
+	<script src="resources/js/script.js"></script>
+</footer>
 </body>
 
 </html>

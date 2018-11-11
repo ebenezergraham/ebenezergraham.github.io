@@ -7,6 +7,11 @@ var config = {
   messagingSenderId: "124315009276"
 };
 
+var medium = {
+	ClientID: "295a7dde004d",
+	ClientSecret: "63ae01323da91a168e43eacd1ff9ff7e0b99afd2"
+}
+
 $(document).ready(function() {
   firebase.initializeApp(config);
 });

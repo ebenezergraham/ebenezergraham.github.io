@@ -257,7 +257,7 @@ p {
     url("img/back-drop-2.jpg");
   background-attachment: fixed;
   background-size: cover;
-  height: 450px;
+  height: 1050px;
 }
 
 .select-country {
@@ -343,7 +343,31 @@ p {
 }
 
 #back-drop .card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 35px 20px;
+}
+
+.green-circle{
+  height: 23px;
+  border-radius: 18.5px;
+  border: solid 1.5px #8aca5d;
+}
+
+.correct{
+  width: 10.8px;
+  height: 7.8px;
+  object-fit: contain;
+  background-color: #8aca5d;
+}
+
+.green-circle p {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #8aca5d;
 }
 
 .card {
@@ -354,6 +378,10 @@ p {
   box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
 }
 
+#section-blog div .card
+{
+   padding: 3em;
+}
 .chart div {
   font: 10px sans-serif;
   background-color: steelblue;
