@@ -128,9 +128,12 @@ p {
 
 #top span a {
   background-color: white;
-  padding: 0;
-  border: inset 2px rgba(255, 215, 0, 0.4);
+  padding: 0.1em;
+  border: inset 1px rgba(255, 215, 0, 0.4);
 }
+/*#top span a:first-child{
+  padding-right: 0.2em;
+}*/
 
 .social-media .icon {
   display: none;
@@ -258,6 +261,16 @@ p {
   background-attachment: fixed;
   background-size: cover;
   height: 1050px;
+}
+
+#water {
+  background-image: linear-gradient(
+          rgba(100, 10, 39, 0.8),
+          rgba(15, 15, 39, 0.9)
+  ),
+  url("img/heroimage1.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .select-country {
@@ -786,6 +799,10 @@ table.university-list {
   }
 
   #back-drop {
+    height: 100%;
+    padding-bottom: 10%;
+  }
+  #water {
     height: 100%;
     padding-bottom: 10%;
   }
