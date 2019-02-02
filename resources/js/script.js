@@ -100,15 +100,15 @@ $(function() {
 
 $("#back-drop").ripples({
   // Image Url
-  imageUrl: "img/back-drop-2.jpg",
+  imageUrl: "img/heroimage1.jpeg",
   // The width and height of the WebGL texture to render to.
   // The larger this value, the smoother the rendering and the slower the ripples will propagate.
-  resolution: 400,
+  resolution: 800,
   // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
-  dropRadius: 15,
+  dropRadius: 20,
   // Basically the amount of refraction caused by a ripple.
   // 0 means there is no refraction.
-  perturbance: 0,
+  perturbance: 0.02,
   // Whether mouse clicks and mouse movement triggers the effect.
   interactive: true,
   // The crossOrigin attribute to use for the affected image.
@@ -120,12 +120,12 @@ $("#water").ripples({
   imageUrl: "img/heroimage1.jpeg",
   // The width and height of the WebGL texture to render to.
   // The larger this value, the smoother the rendering and the slower the ripples will propagate.
-  resolution: 500,
+  resolution: 800,
   // The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
   dropRadius: 20,
   // Basically the amount of refraction caused by a ripple.
   // 0 means there is no refraction.
-  perturbance: 1,
+  perturbance: 0.02,
   // Whether mouse clicks and mouse movement triggers the effect.
   interactive: true,
   // The crossOrigin attribute to use for the affected image.
