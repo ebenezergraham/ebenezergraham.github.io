@@ -1,2 +1,4 @@
 [submodule "quiz-theme-js"]
+	url = https://github.com/ebenezergraham/quiz-theme-js.git
+[submodule "universtas"]
 	url = https://github.com/ebenezergraham/university-statistics.git
