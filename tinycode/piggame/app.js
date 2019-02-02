@@ -32,10 +32,12 @@ function updateScreen(){
 }
 
 function reset(){
-    for(var i = 0; i<2; i++){
-        document.getElementById("score-"+ i).innerHTML = 0;
-        document.getElementById("current-"+ i).innerHTML = 0;
+    for(var i = 0; i<2; i++) {
+        document.getElementById("score-" + i).innerHTML = 0;
+        document.getElementById("current-" + i).innerHTML = 0;
     }
+    this.player0 = new Player(0,true);
+    this.player1 = new Player(1,false);
 }
 
 function rollDice(){
@@ -88,6 +90,8 @@ function holdRound(){
     if(getCurrentPlayer().globalScore >=WINNER){
         document.getElementById("name-"+ getCurrentPlayer().id).innerHTML = "Winner";
         setTimeout(function() { reset()}, 10000);
-        }
-    switchPlayer();
+        } else {
+        switchPlayer();
+
+    }
 }
