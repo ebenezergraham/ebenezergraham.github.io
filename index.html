@@ -1,279 +1,285 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<title>Welcome</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/owl.carousel.css" />
-	<link rel="stylesheet" type="text/css" href="assets/css/vertical-timeline.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="assets/js/facebookcomment.js"></script>
-	<link href="assets/images/icons/myfav.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="resources/css/style.css">
+	<link rel="stylesheet" href="vendor/css/normalize.css">
+	<link rel="stylesheet" href="vendor/css/grid.css">
+	<link href="resources/img/favicon.png" rel="icon" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+	      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+	      crossorigin="anonymous">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135628825-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
+		gtag('config', 'UA-135628825-1');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+<header id="water">
+	<div class="social-media" id="top">
+		<i class="fa fa-bars icon" onclick="toggle()"><span>Menu</span></i>
+		<p id="top-msg">+230 58409206 | egraha203@caledonian.ac.uk
+			<span>
+				<a href="https://www.linkedin.com/ebenezergraham"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ebenezerkagraham"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/ebenezergraham"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/ebenezergraham"><i class="fab fa-instagram"></i></a>
+                </span>
+		</p>
+	</div>
 
-	<!-- Nav -->
-	<i class="fa fa-bars" id="menu-toggle" title="Menu"></i>
-
-
-	<nav class="side-menu">
-		<i class="fa fa-arrows-alt" title="Close" id="side-menu-close"></i>
-		<div>
-
-			<ul class="links" id="side-menu-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#background">Background</a></li>
-				<li><a href="#blog">Blog</a></li>
-				<li><a href="#application">Application</a></li>
-				<li><a href="#diary">Diary</a></li>
-			</ul>
-		</div>
+	<nav class="navbar">
+		<i class="fa fa-university"><span>Portfolio</span> </i>
+		<a href="#section-countries">Portfolio</a>
+		<a href="#section-blog">Blog</a>
+		<a href="#section-testimonials">Favourite Quotes</a>
+		<a target="_blank" style="color: darkred; font-weight: bold;" href="https://www.patreon.com/ebenezergraham">Donate</a>
+		<a style="color: white; font-weight: bold "href="resources/docs/personal-portfolio.zip" class="active">Download this Theme</a>
 	</nav>
 
 
-	<!-- Banner -->
-	<section class="banner-full p-overlay overlay">
-		<!-- Space for the moving particles to occupy. -->
-		<div class=""id="particles-js"><nav id="menu">
-
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#background">Background</a></li>
-				<li><a href="#blog">Blog</a></li>
-				<li><a href="#application">Application</a></li>
-				<li><a href="#diary">Diary</a></li>
-			</ul>
-		</nav> </div>
-		<div id="typed-wrapper"> <span id="typed"> </span> </div>
-		<button id="calltoaction"><a href="#blog">Leave a Message</a></button>
-	</section>
-	<div id="background">
-		<section>
-			<h2>Background</h2>
-			<h6 class="intro">
-I am Ebenezer Kwesi Akyen Graham, and I interned with Cim Finance, a subsidiary company of Cim Group. Cim Finance is located at Port Louis, Mauritius and its target market is mainly the people of Mauritius and Rodrigues. As a Computing student, I joined the IT department and participated in special projects that were being undertaken by the department. My supervisor was the manager of the department and I worked with him throughout my internship.</h6>
-			<div class="split background-right theowl">
-				<div class="owl-carousel owl-theme">
-					<div> <img src="assets/images/company1.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
-					<div> <img src="assets/images/company2.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
-					<div> <img src="assets/images/company3.jpg" alt="company image" title="Cim Finance office" class="company-images"></div>
-				</div>
-			</div>
-			<div class="split background-left">
-				<p class="card">Cim Finance offers financial solutions to individual consumers, SMEs and large corporates. For this reason, the company employs over 1000 employees and over 80 counters spread all over Mauritius and Rodrigues.</p>
-				<p class="card"> The company offers Leasing, Factoring and Hire Purchase Services. Cim Finance falls under the finance and business services sector in Mauritius. However, it is a non-banking financial institution.</p>
-			</div>
-		</section>
-
-
-
+	<div class="hero-text">
+		<h1>Hi there,<br> I am Ebenezer Graham </h1>
+		<p>
+			Welcome to my page.
+			Before you head off and do your thing, know that this site was coded
+			from scratch. I'm always experimenting with it and so know that a few things might be broken :)
+			<br> <br>
+			Click on <strong>Hello</strong> to chat with me. See ya!
+			<br>
+		</p>
+		<a class="btn btn-full" href="#section-countries">View Portfolio</a>
+		<a class="btn btn-empty" href="resources/docs/Ghana_Graham_Ebenezer.pdf" target="_blank">View CV</a>
 	</div>
-	<h4 class="sub-heading locationhead">The Head Office's Location</h4>
-	<div id="map"></div>
-	<section class="roles">
-		<h2>Roles</h2>
-		<h6 class="intro">In Cim Finance, there is room to grow and everyone deliberatly assign tasks that will help you to grow. In this section, I will highlights a few tasks I performed during my internship. </h6>
-		<div class="split background-right">
-			<p class="card roles-card"> I refactored 3 critical systems to make them autonomous and functional in a disaster recovery site. Hence, I integrated code that detects the software’s environment and configures the applications accordingly. Therefore the software could function
-				regardless of its host server's location.</p>
-			<p class="card roles-card"> I assisted the systems administrators in expanding the office network. I assisted by setting up multiple end devices and troubleshooting exist devices in multiple office spaces</p>
+</header>
+<section id="section-introduction">
+	<div class="row">
+		<h2 class="heading">Introduction</h2>
+	</div>
 
-		</div>
-		<div class="split background-left">
-			<p class="card roles-card">I debugged programs develop during the validation and verification phase of my first project. I assisted by stepping through the codes and reporting abnormalities. Hence, I validated the programs and confirmed readiness to ship after performing release tests and deployment
-				simulations
+	<div class="row">
+		<div class="col span-1-of-2 box ">
+			<p>
+				<strong>WHO AM I?</strong><br>
+				I am a final year computing student and part of the founding
+				class at the African Leadership College. This means that I was
+				one of the 180 students selected out of 6000 applicants,
+				who were selected to be in the inaugural class that
+				would help to establish the University in 2016 and
+				shaped its culture. Currently making the institution
+				the most innovative company in Africa according to Fast Company (<a target="_blank" href="https://www.fastcompany.com/most-innovative-companies/2019/sectors/africa">Link to Article</a>).
+
+				<br><br><strong>My Personal Mission</strong><br>
+				My personal mission is to speed up financial inclusion in the African Continent. My approach is to use a scalable financial technology such as mobile money to make online services accessible to all working classes in the economy.
 			</p>
-			<p class="card roles-card">I study a java based open source software, gather intel from prospective users and then set up/ customize the software on the server to revamp a core service in the company.</p>
+			<br>
+			<a class="btn btn-full" href="#section-countries">Learn More</a>
 		</div>
-	</section>
 
-	<section class="Services">
-		<h2>Services</h2>
-		<p class="intro">Cim is a non-banking financial institution that develops innovative integrated consumer and business products and services, for less privileged communities or for small and medium businesses, which require flexible solutions to improve their quality
-			of life and grow their activities. A few services have been displayed here. </p>
+		<div class="col span-1-of-2 box">
+			<div id="twitter-container"><a href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw"
+			                               class="twitter-follow-button"
+			                               data-lang="en" data-show-count="false">Follow @ebenezergraham</a>
+				<a href="https://twitter.com/intent/tweet?screen_name=ebenezergraham&ref_src=twsrc%5Etfw"
+				   class="twitter-mention-button"
+				   data-lang="en" data-show-count="false">Tweet to @ebenezergraham</a>
+				<a class="twitter-timeline" data-lang="en" data-width="335" data-height="450"
+				   href="https://twitter.com/ebenezergraham?ref_src=twsrc%5Etfw">
+					Check out my Tweets
+				</a>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="section-countries">
+	<div id="back-drop">
 		<div class="row">
-			<div class="column">
-				<div class="serivce-card">
-					<img src="assets/images/factoring.jpg" alt="Factoring Services" style="width:100%">
-					<div class="container">
-						<strong>Factoring Services</strong>
-						<br/><br/>
-						<p>Cim Finance purchases a debt owned by Party A by paying party B. Party A then gets into an agreement with Cim Finance and pays the money to Cim Finance in installments with floating interests</p>
-
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="serivce-card">
-					<img src="assets/images/loan.jpg" alt="Leasing Service" style="width:100%">
-					<div class="container">
-						<strong>Leasing Services</strong>
-						<br/><br/>
-						<p>Cim Finance leasing solutions range for vehicles, equipment among others. It is tailored to the needs of their customers and boosts their financial security. Repayments ranges from 36 to 84 months.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="serivce-card">
-					<img src="assets/images/creditpurchase.jpg" alt="Credit Purchase" style="width:100%">
-					<div class="container">
-						<strong>Credit Purchase Services</strong>
-						<br/><br/>
-						<p> Cim Finance allows customers to purchase items and then pay for the item (usually Devices) in regular installments while enjoying the use of it. During the repayment period Cim finance acquire its profit.</p>
-
-					</div>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="serivce-card">
-					<img src="assets/images/onlinepayment.jpg" alt="Online Payment Services" style="width:100%">
-					<div class="container">
-						<strong>Online payment gateway</strong><br/><br/>
-						<p>Online payment gateway for e-commerce acquiring on merchant sites. One of the services is UnionPay Online Payment (UPOP). UPOP is accepted by over 10 million foreign online merchants in about 200.
-						</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="parallax">
-		<div class="overlay">
-		</div>
-	</div>
-	<section>
-		<div id="blog">
-			<h2>Blog</h2>
-			<div id="fb-root">
-				<div class="fb-comments" data-href="https://ebenezergraham.me" data-width="1000px" data-numposts="5"></div>
-			</div>
-		</div>
-		<h2 id="diary">Diary</h2>
-		<p class="intro">This section contains the project plan and the advice I would give to other students</p>
-		<h4 class="sub-heading p-plan">Project Plan</h4>
-		<div id="plan-div"></div>
-		<h4 class="sub-heading">What I would do differently</h4>
-		<div class="slideshow-container" id="diary-quote">
-
-			<!-- Full-width slides/quotes -->
-			<div class="mySlides">
-				<q>If I had the chance to apply again for last year's internship, I would find out what the company is doing <br/> and prepare adequately so that I can fit into the company easily</q>
-			</div>
-
-			<div class="mySlides">
-				<q>I would revise all the modules we took so that I can be ontop of my game once I start work</q>
-
-			</div>
-
-			<div class="mySlides">
-				<q>I would start searching for internship vacancies earlier than I did.</q>
-
-			</div>
-
-			<!-- Next/prev buttons -->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<h2 class="heading">Portfolio</h2>
 		</div>
 
-		<!-- Dots/bullets/indicators -->
-		<div class="dot-container">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-		</div>
-	</section>
-	<div class="parallax " id="second-parallax">
-		<div class="overlay">
-		</div>
-	</div>
+		<div class="row">
 
-	<div id="application">
-		<h2>Application Timeline</h2>
-		<div id="application-div">
-			<div data-vtdate="March 2017" class="appcard">
-				Networked with the Managing Director and scheduled an Interview. Prepared my resume and cover letter.
+			<div class="col span-1-of-3 box card">
+				<h3>FINCN Notifications</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/fincn.png" alt="Apace Image"></figure>
+				<p>
+					This is an sms and email notification microservice developed for the Apache Fineract CN
+					project.
+
+				</p>
+				<!--<span class="green-circle">
+						<img src="img/correct.png" class="correct">
+						Spring
+					</span>-->
+				<a class="btn btn-full"
+				   href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=75975771">Documentation</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/notifications">GitHub</a>
 			</div>
-			<div data-vtdate="June 2017" class="appcard">
-				Internship offer made by Cim Finance
+
+			<div class="col span-1-of-3 box card">
+				<h3>University Listings</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/university-listing.jpg"
+				                                   alt="Ghana Image"></figure>
+				<p>
+					This project allows your to find all universities available in Ghana, Mauritius, UK and
+					programmes data.
+				</p>
+				<a class="btn btn-full" href="../universtas/">View Demo</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/university-statistics">GitHub</a>
 			</div>
-			<div data-vtdate="July 2017" class="appcard">
-				Internship offer accepted and formal process started by ALC.
+			<div class="col span-1-of-3 box card">
+				<h3>Quiz Theme</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/alulearn.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					This website is a theme for creating a basic quiz website. It's free to use so Enjoy!
+				</p>
+				<a class="btn btn-full" href="../quiz-theme-js">View Demo</a>
+				<a class="btn btn-empty" href="https://github.com/ebenezergraham/quiz-theme-js">GitHub</a>
 			</div>
-			<div data-vtdate="September 2017" class="appcard">
-				Contracts signed between Cim Finance and African Leadership University and then another contract between Cim Finance and myself. I am introduced to the IT Department.
+
+
+		</div>
+
+		<div class="row">
+			<div class="col span-1-of-3 box card">
+				<h3>ALU SRC</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/alusrc.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					My most recent work
+				</p>
+				<a class="btn btn-full" href="https://www.alusrc.com">View Website</a>
 			</div>
-			<div data-vtdate="December 2017" class="appcard">
-				Internship Ends
+			<div class="col span-1-of-3 box card">
+				<h3>Freelance Portfolio</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/portfolio.png" alt="Mauritius Image">
+				</figure>
+				<p>
+					View a few of my freelance work.
+				</p>
+				<a class="btn btn-full" href="./resources/docs/freelance-portfolio.pdf">View Portfolio PDF</a>
+			</div>
+			<div class="col span-1-of-3 box card">
+				<h3>Pig Game</h3>
+				<figure class="country-photo"><img src="resources/img/portfolio/piggame.png" alt="Pig Game Image">
+				</figure>
+				<p>
+					Play my version of the Pig Game
+				</p>
+				<a class="btn btn-full" href="tinycode/piggame/index.html">Play Game</a>
 			</div>
 		</div>
 	</div>
-	<section>
-		<h2>Shoutouts</h2>
-		<div class="slideshow-container">
+</section>
 
-			<!-- Full-width slides/quotes -->
-			<div class="outSlides">
-				<q>Shoutout to ALC Carrer Dev. Team for being supportive.</q>
-				<p class="author">- To Career Development Team</p>
-			</div>
+<section id="section-blog">
+	<div class="row">
+		<h2 class="heading">My Blog</h2>
+	</div>
+	<div class="row">
+		<div class="col span-1-of-2">
+			<p class=" row box card">
+				Title - Oponsouce and I
+				<!--<i>
+					You’ve probably heard of UNIX — a family of operating systems developed in the 1970s.
+					There is a rich history about this software but in short, a group of really smart people
+					lead by Ken Thompson decided to create this software and make it available for others to use.
+					Out of this free software came a plethora of goodies and a massive family tree.
+				</i>-->
+				<br>
+				<span class="tname">Ebenezer Graham - 11/11/2018</span>
+				<br>
+				<a class="btn btn-full" href="https://medium.com/@ebenezergraham/open-source-and-i-3e3945a9affa">Read
+					More</a>
 
-			<div class="outSlides">
-				<q>Keep being awesome. Thanks for being there for me!</q>
-				<p class="author">- To Mohamed Bouya Maalainine</p>
-			</div>
+			</p>
+		</div>
+		<div class="col span-1-of-2">
+			<p class=" row box card">
+				Title - Oponsouce and I
+				<!--<i>
+					You’ve probably heard of UNIX — a family of operating systems developed in the 1970s.
+					There is a rich history about this software but in short, a group of really smart people
+					lead by Ken Thompson decided to create this software and make it available for others to use.
+					Out of this free software came a plethora of goodies and a massive family tree.
+				</i>-->
+				<br>
+				<span class="tname">Ebenezer Graham - 11/11/2018</span>
+				<br>
+				<a class="btn btn-full" href="https://medium.com/@ebenezergraham/open-source-and-i-3e3945a9affa">Read
+					More</a>
 
-			<div class="outSlides">
-				<q>Thanks for being a brother, a friend and a colleague. I wouldn't have made it out of this internship without your support</q>
-				<p class="author">- To Emmanuel Sackey</p>
-			</div>
+			</p>
+		</div>
+	</div>
+</section>
+<section id="section-testimonials">
+	<div class="row">
+		<h2 class="heading">Favourite Quotes</h2>
+	</div>
+	<p class="row box card">
+		Talk is cheap, show me the code
+		<br>
+		<span class="tname"> Name - Linus Torvalds</span>
+	</p>
+	<p class="row box card">
+		Be so good they can't ignore you.
+		<br>
+		<span class="tname"> Name - Steve Martin</span>
+	</p>
+</section>
 
-			<!-- Next/prev buttons -->
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<footer class="footer" id="section-footer">
+	<div class="row ">
+		<div class="col span-1-of-2 box">
+			<h2 class="heading">My Current Focus</h2>
+			<p>
+				My current focus is on piloting research and developmental projects which will use mobile payment technologies to make escrow services available to multivendor and gig platforms in the region. The concept of escrow insurance played a significant role in the adoption and development of the electronic commerce industry in many developed countries. Therefore, my aim is to replicate these success strategies with technology which is readily available to the average African.
+			</p>
+			<!--<div class="message">
+				<form class="sucess-none" id="contact-me">
+					<div class="inputs">
+						<input type="text" value="" name="name" required id="contact-name" placeholder="Enter Name:">
+						<input type="email" value="" name="email" required id="contact-email"
+						       placeholder="Enter Email:">
+						<textarea type="text" value="" name="message" required id="contact-message"
+						          placeholder="Enter Message:"></textarea>
+					</div>
+					<button type="submit" class="btn btn-full" value="Submit" name="subscribe" id="submitContact">Send
+					</button>
+				</form>
+			</div>-->
 		</div>
 
-		<!-- Dots/bullets/indicators -->
-		<div class="dot-container">
-			<span class="outdot" onclick="currentSlide(1)"></span>
-			<span class="outdot" onclick="currentSlide(2)"></span>
-			<span class="outdot" onclick="currentSlide(3)"></span>
+		<div class="col span-1-of-2 box">
+			<h2 class="heading">Open source Contribution</h2>
+			<p>To promote financial inclusion in the world I have decided to contribute to the financial sector, I actively contribute to the development of the Apache Fineract opensource project. This project aims to provide world-class Microfinance applications for free. I also use this avenue to sharpen my skill set outside class and create value in the process. I have obtained a wide range of technical expertise in building scalable cloud-native systems.
+			</p>
 		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="icons-container">
-			<ul class="icons">
-				<li><a href="https://www.twitter.com/ebenezergraham" class="fa fa-twitter" title="Twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="https://www.linkedin.com/in/ebenezer-graham" class="fa fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/ebenezergraham/" class="fa fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
-			</ul>
-		</div>
-		<div class="copyright">
-			&copy; Designed By Ebenezer Graham. All rights reserved.
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
-	<script src="assets/js/particles.js"></script>
-	<script src="assets/js/app.js"></script>
-	<script src="assets/js/function.js"></script>
-	<script src="assets/js/gmap.js"></script>
-	<script src="assets/js/gchart.js"></script>
-	<script src="assets/js/nippy.js"></script>
-	<script src="assets/js/vertical-timeline.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdcc9H9QD9jDA2bm8VdnEaFCjDt1krWOQ&callback=googleMap"></script>
+	</div>
+	<p class="copyright">
+		<span> Live like it's your last</span>
+	</p>
+	<script src="vendor/js/handlebars.min.js"></script>
+	<script src="resources/js/visualization.js"></script>
+	<script src="vendor/js/jquery.ripples.js"></script>
+	<script src="resources/js/script.js"></script>
+</footer>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: 'a29fb17a-b8af-462c-9aec-e3827c31b313', f: true }); done = true; } }; })();</script>
 </body>
 
 </html>
